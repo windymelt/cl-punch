@@ -6,7 +6,7 @@
 ;; Enable syntax.
 (cl-punch:enable-punch-syntax)
 
-;; ^() is comverted into (lambda ...) .
+;; ^() is converted into (lambda ...) .
 ;; Each underscore is converted into a lambda argument.
 
 (mapcar ^(* 2 _) '(1 2 3 4 5))
