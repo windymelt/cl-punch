@@ -18,7 +18,7 @@
   :version "0.1"
   :author "Windymelt"
   :license "MIT"
-  :depends-on ()
+  :depends-on (:cl-syntax)
   :components ((:module "src"
                 :components
                 ((:file "cl-punch"))))

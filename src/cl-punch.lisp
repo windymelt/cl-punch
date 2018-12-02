@@ -28,10 +28,9 @@
       (let ((result-inner-form (mapcar #'replace-underscore form)))
         `(lambda ,(nreverse arg-symbol-list) ,result-inner-form)))))
 
-(defun %enable-punch-syntax ()
-  (setf *readtable* (copy-readtable))
-  (set-macro-character #\^ #'punch-reader))
+(cl-syntax:defsyntax punch-syntax
+  (:macro-char #\^ #'punch-reader))
 
 (defmacro enable-punch-syntax ()
   '(eval-when (:compile-toplevel :load-toplevel :execute)
-    (%enable-punch-syntax)))
+    (cl-syntax:use-syntax punch-syntax)))
