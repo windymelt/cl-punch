@@ -7,7 +7,7 @@
 
 ;; NOTE: To run this test file, execute `(asdf:test-system :cl-punch)' in your Lisp.
 
-(plan 2)
+(plan 5)
 
 (enable-punch-syntax)
 
