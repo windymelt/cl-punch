@@ -1,5 +1,7 @@
 # Cl-Punch - Scala-like anonymous lambda literal
 
+[![Quicklisp](http://quickdocs.org/badge/cl-punch.svg)](http://quickdocs.org/cl-punch/)
+
 ## Usage
 
 ```
