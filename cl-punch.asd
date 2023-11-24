@@ -15,7 +15,7 @@
 (in-package :cl-punch-asd)
 
 (defsystem cl-punch
-  :version "0.1"
+  :version "0.2"
   :author "Windymelt"
   :license "MIT"
   :depends-on (:cl-syntax)
